@@ -1,0 +1,16 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sim_1/new/tb_DLX_TOP.v,1575536614,systemVerilog,,,,tb_DLX_TOP,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sim_1/new/tb_memory.v,1575576327,verilog,,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sim_1/new/tb_DLX_TOP.v,,memory,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/ALUop.v,1575525249,verilog,,,,,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/ALUsec.v,1575530995,verilog,,,,,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_ALU.v,1575536536,systemVerilog,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sim_1/new/tb_DLX_TOP.v;C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_CTRL.v;C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v;C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/GPR.v,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_CTRL.v,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/ALUop.v;C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/S2op.v,$unit_DLX_ALU_v;DLX_ALU,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_CTRL.v,1575579566,systemVerilog,,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/opcodes.v;C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/ALUsec.v,DLX_CTRL,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v,1575562270,systemVerilog,,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/GPR.v,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/opcodes.v,DLX_TOP,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/GPR.v,1575556338,systemVerilog,,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sim_1/new/tb_DLX_TOP.v,,GPR,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/S2op.v,1574637678,verilog,,,,,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/mux2-1tri.v,1573936548,verilog,,C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sim_1/new/tb_memory.v,,mux2tri,,,,,,,,
+C:/Users/Reith/EE/DLX_TOP/DLX_TOP.srcs/sources_1/new/opcodes.v,1575566125,verilog,,,,,,,,,,,,
