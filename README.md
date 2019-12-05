@@ -1,6 +1,8 @@
 # DLX
 DLX Processor
 
+Coded using Vivado 2019.2 Using Verilog 200x.
+
 The approach for the hardware design of this processor is to have a modular structure which can be scaled as more instructions from the instruction set are added. The instructions required for a complete program will be added first with the goal of implementing the entire DLX instruction. The design will be implemented in steps by first designing a framework with the hardwired control signals based on the DLX routing handout given in class. The ALU will be the next module implemented with a single operation (AND). The control unit will be designed and included with all the relevant control signals present. Each operation will be added to the control unit and ALU after the previous instruction has been tested in simulation. Testing will be done by using a DLX compiler to compile assembly code into machine code which will be hard-coded into the testbench as test cases with associated memory location.
 The programming language using to implement the processor will be Verilog and simulation will be done using Modelsim.
 
