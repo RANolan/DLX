@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DLX_ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DLX_CTRL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DLX_TOP
+INFO: [VRFC 10-2458] undeclared symbol Cload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:84]
+INFO: [VRFC 10-2458] undeclared symbol REGload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:85]
+INFO: [VRFC 10-2458] undeclared symbol Aload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:86]
+INFO: [VRFC 10-2458] undeclared symbol Aoe, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:87]
+INFO: [VRFC 10-2458] undeclared symbol Bload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:88]
+INFO: [VRFC 10-2458] undeclared symbol Boe, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:89]
+INFO: [VRFC 10-2458] undeclared symbol IRload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:91]
+INFO: [VRFC 10-2458] undeclared symbol IRoeS1, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:92]
+INFO: [VRFC 10-2458] undeclared symbol IRoeS2, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:93]
+INFO: [VRFC 10-2458] undeclared symbol PCload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:96]
+INFO: [VRFC 10-2458] undeclared symbol PCoeS1, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:97]
+INFO: [VRFC 10-2458] undeclared symbol IARload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:98]
+INFO: [VRFC 10-2458] undeclared symbol IARoeS1, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:99]
+INFO: [VRFC 10-2458] undeclared symbol IARoeS2, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:100]
+INFO: [VRFC 10-2458] undeclared symbol PCMARselect, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:101]
+INFO: [VRFC 10-2458] undeclared symbol MARload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:102]
+INFO: [VRFC 10-2458] undeclared symbol MDRload, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:104]
+INFO: [VRFC 10-2458] undeclared symbol MDRoeS2, assumed default net type wire [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/DLX_TOP.v:105]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/GPR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPR
+WARNING: [VRFC 10-986] literal value truncated to fit in 1 bits [C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sources_1/new/GPR.v:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Reith/Documents/DLXstuff/DLX/DLX_TOP/DLX_TOP.srcs/sim_1/new/tb_DLX_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DLX_TOP

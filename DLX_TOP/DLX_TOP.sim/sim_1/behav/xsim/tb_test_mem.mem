@@ -5,7 +5,7 @@
 3C040A01  //lhi r4,0x0a01
 24840CB8  //addui r4,r4, 0x0cb8 
 00642801 //sub r5,r3,r4  
-ACA70000  //sw (r5), r6  = dec 1000 or mem 250
+ACA60000  //sw (r5), r6  = dec 1000 or mem 250
 8CA80000  //lw r8, (r5)  = dec 1000 or mem 250
 C1084810  //sequi r9, r8,r6
 1120000C  //beqz r9, 0x0 //location + 12 or mem 14

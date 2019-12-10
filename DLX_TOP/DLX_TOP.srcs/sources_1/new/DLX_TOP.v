@@ -151,6 +151,8 @@ assign S2 = (IRoeS2 == 1'b1) ? IR : 32'bz;
 assign S1 = (Aoe == 1'b1) ? A : 32'bz;
 assign S2 = (Boe == 1'b1) ? B : 32'bz;
 
+assign MemData = (MemWrite) ? MDR : 32'bz;
+
 //OP Code Handling
 assign opcode = IR[31:26];
 assign opcodeALU = IR[5:0]; //as per routing diagram
@@ -158,8 +160,8 @@ assign opcodeALU = IR[5:0]; //as per routing diagram
 
 //Register loads
 
-always @(posedge clk or posedge rst) begin
-       if(rst == 1) begin
+always @( rst) begin
+
            IR <= 32'b0;
            PC <= 32'b0;
            IAR <= 32'b0;
@@ -168,18 +170,20 @@ always @(posedge clk or posedge rst) begin
            A <= 32'b0;
            B <= 32'b0;
            C <= 32'b0;
-        end else begin
-        if(MDRload) MDR <= MDRWire;
+           end
+        
+always @(posedge clk) begin
+            if(MDRload) MDR <= MDRWire;
         if(MARload) MAR <= DEST;
         if(IARload) IAR <= DEST;
-        if (IRload) IR <= MemData;;
+        if (IRload) IR <= MemData;
         if (PCload) PC <= DEST;
         if (Aload) A <= Areg;
         if (Bload) B <= Breg;
         if (Cload) C <= DEST;
+ end
     
-    end
-end
+
 //Memory Connections
 
 
