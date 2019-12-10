@@ -13,14 +13,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="496652fs"></ZoomEndTime>
-      <Cursor1Time time="205000fs"></Cursor1Time>
+      <ZoomEndTime time="1272252fs"></ZoomEndTime>
+      <Cursor1Time time="425000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="82"></ValueColumnWidth>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="68" />
+   <WVObjectSize size="123" />
    <wvobject fp_name="/tb_DLX_TOP/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -52,6 +52,30 @@
    <wvobject fp_name="/tb_DLX_TOP/MemWait" type="logic">
       <obj_property name="ElementShortName">MemWait</obj_property>
       <obj_property name="ObjectShortName">MemWait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/rf[250]" type="array">
+      <obj_property name="ElementShortName">[250][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[250][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/GPR1/GPR[16]" type="array">
+      <obj_property name="ElementShortName">[16][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/GPR1/GPR[15]" type="array">
+      <obj_property name="ElementShortName">[15][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/GPR1/GPR[9]" type="array">
+      <obj_property name="ElementShortName">[9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/GPR1/GPR[8]" type="array">
+      <obj_property name="ElementShortName">[8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/GPR1/GPR[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/GPR1/GPR[5]" type="array">
       <obj_property name="ElementShortName">[5][31:0]</obj_property>
@@ -295,5 +319,202 @@
    <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/IR" type="array">
       <obj_property name="ElementShortName">IR[31:0]</obj_property>
       <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/rf" type="array">
+      <obj_property name="ElementShortName">rf[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[0:255][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/in0" type="array">
+      <obj_property name="ElementShortName">in0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/in1" type="array">
+      <obj_property name="ElementShortName">in1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/out" type="array">
+      <obj_property name="ElementShortName">out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRWire" type="array">
+      <obj_property name="ElementShortName">MDRWire[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDRWire[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRload" type="logic">
+      <obj_property name="ElementShortName">MDRload</obj_property>
+      <obj_property name="ObjectShortName">MDRload</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemAddr" type="array">
+      <obj_property name="ElementShortName">MemAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/MemData" type="array">
+      <obj_property name="ElementShortName">MemData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/MemAddr" type="array">
+      <obj_property name="ElementShortName">MemAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/MemWait" type="logic">
+      <obj_property name="ElementShortName">MemWait</obj_property>
+      <obj_property name="ObjectShortName">MemWait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/MemRead" type="logic">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRWire" type="array">
+      <obj_property name="ElementShortName">MDRWire[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDRWire[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MAR" type="array">
+      <obj_property name="ElementShortName">MAR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDR" type="array">
+      <obj_property name="ElementShortName">MDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MARmux/in0" type="array">
+      <obj_property name="ElementShortName">in0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MARmux/in1" type="array">
+      <obj_property name="ElementShortName">in1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MARmux/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MARmux/out" type="array">
+      <obj_property name="ElementShortName">out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/in0" type="array">
+      <obj_property name="ElementShortName">in0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/in1" type="array">
+      <obj_property name="ElementShortName">in1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MDRmux/out" type="array">
+      <obj_property name="ElementShortName">out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/IR" type="array">
+      <obj_property name="ElementShortName">IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemWait" type="logic">
+      <obj_property name="ElementShortName">MemWait</obj_property>
+      <obj_property name="ObjectShortName">MemWait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemAddr" type="array">
+      <obj_property name="ElementShortName">MemAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemData" type="array">
+      <obj_property name="ElementShortName">MemData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemOP" type="array">
+      <obj_property name="ElementShortName">MemOP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MemOP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemRead" type="logic">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/rf" type="array">
+      <obj_property name="ElementShortName">rf[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[0:255][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/DLX_TOP1/MemData" type="array">
+      <obj_property name="ElementShortName">MemData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemWait" type="logic">
+      <obj_property name="ElementShortName">MemWait</obj_property>
+      <obj_property name="ObjectShortName">MemWait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemAddr" type="array">
+      <obj_property name="ElementShortName">MemAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemData" type="array">
+      <obj_property name="ElementShortName">MemData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemOP" type="array">
+      <obj_property name="ElementShortName">MemOP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MemOP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemRead" type="logic">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/rf" type="array">
+      <obj_property name="ElementShortName">rf[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[0:255][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DLX_TOP/mem1/rf" type="array">
+      <obj_property name="ElementShortName">rf[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[0:255][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>

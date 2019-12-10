@@ -68,6 +68,7 @@ input clk, rst;
 
 reg [2:0] state;
 reg [2:0] next_state;
+reg MemRead1, MemWrite1,MemRWMask;
 
 always @(posedge clk) begin
     if (rst == 1) begin //default startup values and reset
@@ -92,22 +93,26 @@ always @(posedge clk) begin
         IARoeS2 <= 0;
         PCMARselect <= 0; 
         MARload <= 0; 
-        MemRead <= 0; 
-        MemRead <= 0; 
+        MemRead1 <= 0; 
         MDRload <= 0; 
         MDRoeS2 <= 0; 
-        MemWrite <= 0;
+        MemWrite1 <= 0;
         MemOP <= 0;
+        MemRWMask <= 0;
     end else begin
     case(next_state) 
         InsF: begin  //fetch instruction
+                if(IRload == 1) begin
+                    IRload <= 0;
+                 end
                 if(MemWait == 0) begin
+                MemRWMask <= 1;
                     MDRoeS2 <= 0;
                     PCMARselect <= 0;
-                    MemWrite <= 0;
+                    MemWrite1 <= 0;
                     REGload <= 0;
                     PCMARselect <= 0;
-                    MemRead <= 1;
+                    MemRead1 <= 1;
                     MemOP <= 0;
                     IRload <= 1;
                     next_state <= ID;
@@ -118,9 +123,13 @@ always @(posedge clk) begin
                 end
             end
         ID: begin  //once mem read complete, finish load of instruction to reg and decode, increment PC
+                            if(IRload == 1) begin
+                    IRload <= 0;
+                 end
             if(MemWait == 0) begin
                 //decoded instruction to next state
-                MemRead <= 0;
+                MemRead1 <= 0;
+                MemRWMask <= 1;
                 IRload <= 0;
                 Aload <= 1;
                 Bload <= 1;
@@ -239,6 +248,7 @@ always @(posedge clk) begin
                     S2op <= IMM16SXT;
                     ALUop <= ADD;
                     MARload <= 1;
+                    MemRWMask <= 1;
                     MemRead <= 1;
                     MemOP <= 0;
                     next_state <= MemST;
@@ -275,14 +285,19 @@ always @(posedge clk) begin
             end
             
             SW : begin
+
                     Aoe <= 0;
                     IRoeS2 <= 0;
                     MARload <= 0;
                     Boe <= 1;
                     S2op <= PASS;
                     ALUop <= PASS_S2;
-                    MemRead <= 0;
+                    MemRead1 <= 0;
                     MDRload <= 1;
+                    MemRWMask <= 1;
+                    PCMARselect <= 1;
+                    MemWrite1 <= 1;
+                    MemOP = 0;
                     next_state <= WB;
                     end
             LW : begin
@@ -290,7 +305,7 @@ always @(posedge clk) begin
                         Aoe <= 0;
                         IRoeS2 <= 0;
                         MARload <= 0;
-                        MemRead <= 0;
+                        MemRead1 <= 0;
                         MemOP <= 0;
                         MDRoeS2 <= 1;
                         ALUop <= PASS_S2;
@@ -319,6 +334,7 @@ always @(posedge clk) begin
          IRoeS1 <= 0;
          IRoeS2 <= 0;
          PCoeS1 <= 0;
+         MDRload <= 0;
          case(opcode)
                 ALUprim : begin  //ALU Primary
                     REGload <= 1;
@@ -334,10 +350,11 @@ always @(posedge clk) begin
                     REGselect <= 1; //stored to rs2
                     end
                SW : begin
-                    PCMARselect <= 1;
-                    MemWrite <= 1;
-                    MemOP = 0;
+               if (MemWait ==0) begin
+                    PCMARselect <= 0;
+                    MemWrite1 <= 0;
                     next_state <= InsF;
+                    end
                     end
                LW : begin
                     MDRoeS2 <= 0;
@@ -361,6 +378,12 @@ always @(posedge clk) begin
       end
 
  end
+always @(negedge MemWait) begin
+    MemRWMask <= 0;
+end
+ 
+assign MemRead = MemRead1 & MemRWMask;
+assign MemWrite = MemWrite1 & MemRWMask;
  
 always @(*) begin
     state <= next_state;

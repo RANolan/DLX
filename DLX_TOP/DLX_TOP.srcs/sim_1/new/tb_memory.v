@@ -29,13 +29,13 @@ input MemRead, MemWrite;
 //register file
 reg [31:0] rf [0:255];
 reg [31:0] data;
-reg MemWait0;
+reg MemWaitT;
 integer i;
 //memory controller
 initial begin
     data <= 32'b0;
     MemWait <= 0;
-
+    MemWaitT <= 0;
 /*    for (i=0; i<255; i= i+1) begin
          rf = i;
     end
@@ -60,10 +60,10 @@ initial begin
 end
 
 
-always @(negedge clk)
-begin
-    if(MemRead) begin
-        MemWait <= 1;
+
+
+always @(posedge clk) begin
+         if(MemRead) begin
         if(MemOP == 0)
             data <= rf[MemAddr/4]; //divide by 4 since memory file is indexed by increments of 1
         else if(MemOP == 1) 
@@ -71,7 +71,6 @@ begin
         else if(MemOP == 2)
              data <= {32'b0,rf[MemAddr/4][31:24]};
     end else if(MemWrite) begin
-        MemWait <= 1;
         if(MemOP == 0)
             rf[MemAddr/4] <= data;
         else if(MemOP == 1)
@@ -79,13 +78,31 @@ begin
         else if(MemOP == 2)
             rf[MemAddr/4][31:24] <= data[7:0];
     end
-    if(MemWait !== 0) // 1 clock delay for wait
-      MemWait <= 0;     
+     
+     
+     
+     if(MemWait !== 0) // 1 clock delay for wait
+      MemWait <= 0;    
+end
+
+always @(*) begin
+    //MemWait <= MemWaitWire | MemWaitInternR | MemWaitInternW;
+    if (MemWrite) begin
+        data <= MemData;
+    end
+    //MemWait = MemWaitReg | MemWaitInt;
+end
+
+always@(posedge MemRead, posedge MemWrite) begin
+        MemWait <= 1;
 end
 
 
 //Read operation
 assign MemData = (MemRead & !MemWrite) ? data : 32'bz; //high-z buffer
 //assign data = (MemWrite) ? MemData : 32'bz;
-   
+//assign MemWaitWire = (MemRead | MemWrite) & MemWaitReg;
+    
 endmodule
+
+
