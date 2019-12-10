@@ -1,0 +1,14 @@
+3C06DDDD //lhi r6,0xdddd
+24C6DDDD ///addui r6,r6,0xdddd
+3C630A01  //lhi r3,0x0a01
+246310A0  //addui r3,r3,0x10a0
+3C040A01  //lhi r4,0x0a01
+24840CB8  //addui r4,r4, 0x0cb8 
+00642801 //sub r5,r3,r4  
+ACA70000  //sw (r5), r6  = dec 1000 or mem 250
+8CA80000  //lw r8, (r5)  = dec 1000 or mem 250
+C1084810  //sequi r9, r8,r6
+1120000C  //beqz r9, 0x0 //location + 12 or mem 14
+25EF0CB8  //addui r15,r15, 0x0cb8  
+26100C89  //addui r16,r16, 0x0cb9
+2484ffff  //addui r4,r4, 0x0cb8
